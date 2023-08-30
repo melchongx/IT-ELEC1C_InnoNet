@@ -222,6 +222,6 @@ html {
     border-radius: 20px;
     border: 4px solid #F9943B;
 }
-.about-content h1,h2,h3,h4,h5,h6,pre {
+.about-content h1,h2,h3,h4,h5,h6,p {
     color: white;
 }
