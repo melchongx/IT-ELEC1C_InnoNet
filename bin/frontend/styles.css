@@ -222,7 +222,8 @@ html {
     margin-bottom: 3%;
     padding: 2%;
     border-radius: 20px;
-    border: 4px solid #F9943B;
+    border: 6px solid #F9943B;
+    box-shadow: 2px 2px 20px black;
     
 }
 .about-content h1,h2,h3,h4,h5,h6,p {
@@ -237,3 +238,6 @@ html {
     justify-self: end;
     justify-content: flex-end;
 }
+
+
+
