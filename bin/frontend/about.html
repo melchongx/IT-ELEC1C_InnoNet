@@ -62,149 +62,142 @@
 </body>
 
 <style type="text/css">
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
 
+    body {
+      font-family: arial;
+    }
 
-    *{
-     margin: 0px;
-     padding: 0px;
+    .main {
+      margin: 2%;
+      display: flex; /* Apply flexbox to the main container */
+      flex-wrap: wrap; /* Allow the cards to wrap to the next line on smaller screens */
+      justify-content: space-around; /* Adjust as needed for spacing between cards */
     }
-    body{
-     font-family: arial;
+
+    .card {
+      width: 20%;
+      display: inline-block;
+      box-shadow: 2px 2px 20px black;
+      border-radius: 10px;
+      margin: 2%;
+      border: 6px solid #F9943B;
+      padding: 10px;
+      background-color: #032959;
+      color: #FFFFFF;
     }
-    .main{
-     margin: 2%;
-    }
-    
-    .card{
-         width: 20%;
-         display: inline-block;
-         box-shadow: 2px 2px 20px black;
-         border-radius: 10px; 
-         margin: 2%;
-         border: 6px solid #F9943B;
-         padding: 10px;
-        }
-    
-    .image img{
+
+    .image img {
       width: 100%;
       border-top-right-radius: 5px;
       border-top-left-radius: 5px;
-     }
-    
-    .title{ 
+    }
+
+    .title {
       text-align: center;
-      padding: 10px; 
-     }
-    
-    h1{
+      padding: 10px;
+    }
+
+    h1 {
       font-size: 20px;
-       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-     }
- 
-    .des{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .des {
       padding: 10px;
       text-align: center;
       padding-top: 10px;
       border-bottom-right-radius: 5px;
       border-bottom-left-radius: 5px;
     }
-   
-    
-    </style>
-    <body>
-    
-<h1 style="text-align: center; color: #F9943B; font-size: 60px; font-family: fantasy;" class="mt-5 mb-5">Our Team</h1>
+  </style>
+</head>
 
-    <div class="main">
-    
-     <!--cards -->
-    
-    <div style="background-color: #032959;" class="card">
-    
-    <div class="image">
-       <img src="../img/angge.jpg">
-    </div>
-    <div class="title">
-     <h1><b>Angela Marie Ronquillo</b></h1>
-    </div>
-    <div class="des">
-     <p>Greetings to our beloved users! I'm Angela, and we 
-        warmly welcome you all to InnoNet, where you can 
-        witness interesting and insightful posts about 
-        everything technology! I'm an aspiring IT professional 
-        in the future, and I'm currently studying at one of the 
-        top universities in the Philippines, which is the UST, 
-        as an information technology student. I hope you guys 
-        can enjoy reading and commenting on the contents of our 
-        blogs!</p>
-    </div>
+<body>
+
+  <h1 style="text-align: center; color: #F9943B; font-size: 60px; font-family: fantasy;"
+    class="mt-5 mb-5">Our Team</h1>
+
+  <div class="main">
+
+    <!--cards -->
+
+    <div class="card">
+
+      <div class="image">
+        <img src="../img/angge.jpg">
+      </div>
+      <div class="title">
+        <h1><b>Angela Marie Ronquillo</b></h1>
+      </div>
+      <div class="des">
+        <p>Greetings to our beloved users! I'm Angela, and we warmly welcome you all to InnoNet, where you can witness
+          interesting and insightful posts about everything technology! I'm an aspiring IT professional in the
+          future, and I'm currently studying at one of the top universities in the Philippines, which is the UST, as an
+          information technology student. I hope you guys can enjoy reading and commenting on the contents of our blogs!
+        </p>
+      </div>
     </div>
     <!--cards -->
-    
-    
-    <div style="background-color: #032959;" class="card">
-        
-    <div class="image">
-       <img src="../img/melfy.jpg">
-    </div>
-    <div class="title">
-     <h1><b>Melfred Foncalara</b></h1>
-    </div>
-    <div class="des">
-     <p>Hey! You can call me Melfred and welcome to InnoNet! 
-        This college student is studying at UST and aspires 
-        to be a Web Developer. This blog is all about authenticity and how 
-        we can share topics that are truthful in every other way. InnoNet 
-        creates a way for many people to see the wonderful things, places, 
-        etc that the Technology has to offer. So buckle up and enjoy 
-        different blog posts that are all about the Computing Sciences!.</p>
-    </div>
+
+    <div class="card">
+
+      <div class="image">
+        <img src="../img/melfy.jpg">
+      </div>
+      <div class="title">
+        <h1><b>Melfred Foncalara</b></h1>
+      </div>
+      <div class="des">
+        <p>Hey! You can call me Melfred and welcome to InnoNet! This college student is studying at UST and aspires to
+          be a Web Developer. This blog is all about authenticity and how we can share topics that are truthful in
+          every other way. InnoNet creates a way for many people to see the wonderful things, places, etc that the
+          Technology has to offer. So buckle up and enjoy different blog posts that are all about the Computing
+          Sciences!.
+        </p>
+      </div>
     </div>
     <!--cards -->
-    
-    
-    <div style="background-color: #032959;" class="card">
-    
-    <div class="image">
-       <img src="../img/noel.jpg">
-    </div>
-    <div class="title">
-     <h1><b>Noel Angelo Cansino</b></h1>
-    </div>
-    <div class="des">
-     <p>Hi Hello! I'm Noel, we're glad to see you here! 
-        I'm a driven individual who aspires to be an IT 
-        professional and am currently a UST Information 
-        Technology student. I hope that by browsing our 
-        website, you will get a glimpse of what to expect 
-        in InnoNet, specifically in the fields of 
-        technology and computing sciences!. Have fun exploring 
-        our insightful blogs and feel free to engage in the 
-        forums as well! Don't forget to share our
-        website!</p>
-    </div>
+
+    <div class="card">
+
+      <div class="image">
+        <img src="../img/noel.jpg">
+      </div>
+      <div class="title">
+        <h1><b>Noel Angelo Cansino</b></h1>
+      </div>
+      <div class="des">
+        <p>Hi Hello! I'm Noel, we're glad to see you here! I'm a driven individual who aspires to be an IT professional
+          and am currently a UST Information Technology student. I hope that by browsing our website, you will get a
+          glimpse of what to expect in InnoNet, specifically in the fields of technology and computing sciences!. Have
+          fun exploring our insightful blogs and feel free to engage in the forums as well! Don't forget to share our
+          website!
+        </p>
+      </div>
     </div>
     <!--cards -->
-    
-    <div style="background-color: #032959;" class="card">
-    
-    <div class="image">
-       <img src="../img/rico.jpg">
+
+    <div class="card">
+
+      <div class="image">
+        <img src="../img/rico.jpg">
+      </div>
+      <div class="title">
+        <h1><b>Rico Nieto</b></h1>
+      </div>
+      <div class="des">
+        <p>Hi guys, I am Rico and I live at Pangasinan, Philippines! I am an IT student from UST and working on a very
+          fun project that will maximize our knowledge in web development. Exploring different perspective of what's
+          surrounding us is the concept that we wanted to show in InnoNet. We hope that we were able to show that in
+          the website that we have been putting much effort and hardwork. We hope you enjoy viewing our website!
+        </p>
+      </div>
     </div>
-    <div class="title">
-     <h1><b>Rico Nieto</b></h1>
-    </div>
-    <div class="des">
-     <p>Hi guys, I am Rico and I live at Pangasinan, Philippines! I am an IT 
-        student from UST and working on a very fun project that will maximize 
-        our knowledge in web development. Exploring different perspective of 
-        what's surrounding us is the concept that we wanted to show in 
-        InnoNet. We hope that we were able to show that in the website 
-        that we have been putting much effort and hardwork. We hope 
-        you enjoy viewing our website!</p>
-    </div>
-    </div>
-    </div>
-    </body>
+  </div>
+</body>
 
 </html>
