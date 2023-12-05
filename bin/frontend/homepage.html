@@ -1,108 +1,502 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forum Homepage</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <title>Homepage</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  </head>
+  <link href="global.css" rel="stylesheet">
+  <script src="globaljss.js"></script>
 
 </head>
-<body>
-        <div class="logo">
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ebc67b;">
-            <a class="navbar-brand" href="#">
-                <img src="logo.png" alt="Forum Logo" height="50">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Forums</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Members</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-                </form>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle"  href="#" id="loginDropdown" role="button"
-                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="loginDropdown">
-                            <a class="dropdown-item" href="#">Login</a>
-                            <a class="dropdown-item" href="#">Signup</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <img src="profile-icon.png" alt="Profile" height="30">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        
-        
-    <main>
-        <section class="posts-section">
-            <div class="left-column">
-                <h2>Recent Posts</h2>
-                <div class="post-card">
-                    <div class="category">Category 1</div>
-                    <h3>Post Title 1</h3>
-                    <p>This is a sample post content. </p>
-                    <div class="post-footer">
-                        <span class="comment-counter">10 com</span>
-                        <span class="upvote-counter">50 upvotes</span>
-                    </div>
-                </div>
-                <div class="post-card">
-                    <div class="category">Category 2</div>
-                    <h3>Post Title 2</h3>
-                    <p>Another exampl</p>
-                    <div class="post-footer">
-                        <span class="comment-counter">50 com</span>
-                        <span class="upvote-counter">5 upvotes</span>
-                    </div>
-                </div>
-                <div class="post-card">
-                    <div class="category">Category 3</div>
-                    <h3>Post Title 3</h3>
-                    <p>Aaaaaaaaaaaaaa</p>
-                    <div class="post-footer">
-                        <span class="comment-counter">50 com</span>
-                        <span class="upvote-counter">1293 upvotes</span>
-                    </div>
-                </div>
-            </div>
-            <div class="right-column">
-                <div class="post-card">
-                    <div class="category">Featured</div>
-                    <h3>Featured Post</h3>
-                    <p>This is a featured post with special content...</p>
-                </div>
-            </div>
-        </section>
-    </main>
+  <body style= 'background-size: cover;
+                background-position: center;'>        
+  <div class="content-container">
+              
+        <header>
+            <img id="logoIcon" src="../logos/Logo 1.png" alt="Logo InnoNet">
+            <img id="logoIcon" src="../logos/InnoNet.png" alt="InnoNet">
+            <nav id="leftbar">
+              <ul>
+                <li data-toggle="tooltip" data-placement="bottom" title="Home"><a href="homepage.html">Home</a></li>
+                <li data-toggle="tooltip" data-placement="bottom" title="Clubs"><a href="clubs.html">Clubs</a></li>
+                <li data-toggle="tooltip" data-placement="bottom" title="About"><a href="about.html">About Us</a></li>
 
-    <footer>
-        <p>&copy; 2023 InnoNet Forum</p>
-    </footer>
+              </ul>
+            </nav>
+            <div id="searchBar"class="btn-group dropstart">
+              <ul>
+              <li><input type="text" id="searchQRY" placeholder="Search your club.."></li>
+              </ul>
+            </div>
+            <nav id="rightbar">
+              <ul>
+                <li data-toggle="tooltip" data-placement="bottom" title="Settings">
+                  <a href="#">
+                    <button type="button" class="btn position-relative"><img id="pfpIcon" src="../images/settingsicon.png" alt="settingsicon">
+                    </button></a>
+                </li>
+                <li data-toggle="tooltip" data-placement="bottom" title="Notifications"><a href="#">
+                  <button type="button" class="btn position-relative"><img id="pfpIcon" src="../images/notifbell.png" alt="notifbell">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+6 
+                    <span class="visually-hidden">unread messages</span></span>
+                  </button></a>
+                  
+                </li>
+                <li data-toggle="tooltip" data-placement="bottom" title="Login"><a href="login.html">
+                  <button type="button" class="btn position-relative"><img id="pfpIcon" src="../images/usericon1.png" alt="usericon1"></button></a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+
+
+  <main>
+    <div id="containerHome" class="container">
+        <div id="MainBar">
+          <section class="mainBar">
+            <h1>News Feed</h1>
+            <hr>
+            <section class="postFront" data-bs-toggle="modal" data-bs-target="#regularModal">
+              <img id="profilePicture"src="../images/faruzanPNG.png" alt="faruzanChibi">Madam Faruzan</img>
+              <div class="postText">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                <br>
+                <br>
+              </div>
+              <span class="comment-counter" data-bs-toggle="modal" data-bs-target="#regularModal">
+                  <img src="../images/commentsIcon.png" alt="messageIcon" id="icons">  371
+                </span>
+              <span class="upvote-counter"><img src="../images/upvoteIcon.png" alt="upvoteIcon" id="icons"> 12.1k</span>
+              <span class="downvote-counter"><img src="../images/downvoteIcon.png" alt="downvoteIcon" id="icons"> 576</span>
+              <span class="share-counter"><img src="../images/shareIcon.png" alt="shareIcon" id="icons"> 576</span>
+            </section>
+            <hr>
+            <section class="postFront" data-bs-toggle="modal" data-bs-target="#regularModal">
+              <img id="profilePicture" src="../images/cynoPNG.png" alt="cynoChibi">Daily Dose of Cyno</img>
+              <div class="postText">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Voluptate rerum obcaecati dolorum maiores sint sequi delectus vel fuga facere eaque reprehenderit et assumenda architecto optio, 
+                neque ipsam fugit commodi possimus.
+              </div>
+              <span class="comment-counter" data-bs-toggle="modal" data-bs-target="#regularModal">
+                <img src="../images/commentsIcon.png" alt="messageIcon" id="icons">  371
+              </span>
+              <span class="upvote-counter"><img src="../images/upvoteIcon.png" alt="upvoteIcon" id="icons"> 12.1k</span>
+              <span class="downvote-counter"><img src="../images/downvoteIcon.png" alt="downvoteIcon" id="icons"> 576</span>
+              <span class="share-counter"><img src="../images/shareIcon.png" alt="shareIcon" id="icons"> 576</span>
+            </section>
+            <hr>
+            <section class="postFront" data-bs-toggle="modal" data-bs-target="#videoModal">
+              <img id="profilePicture" src="../images/alhaithamPNG.png" alt="alChibi">swoleboi</img>
+              <div class="postText">
+                <video id="image" src="../videos/whistle-baby.mp4" alt="video" autoplay muted controls></video>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                <br>
+                <br>
+              </div>
+              <span class="comment-counter" data-bs-toggle="modal" data-bs-target="#modalId">
+                <img src="../images/commentsIcon.png" alt="messageIcon" id="icons">  371
+              </span>
+              <span class="upvote-counter"><img src="../images/upvoteIcon.png" alt="upvoteIcon" id="icons"> 12.1k</span>
+              <span class="downvote-counter"><img src="../images/downvoteIcon.png" alt="downvoteIcon" id="icons"> 576</span>
+              <span class="share-counter"><img src="../images/shareIcon.png" alt="shareIcon" id="icons"> 576</span>
+            </section>
+              <hr>
+            <section class="postFront" data-bs-toggle="modal" data-bs-target="#imageModal">
+              <a href="#"><img id="profilePicture" src="../images/kavehPNG.png" alt="kavehChibi" ></img></a>arki101
+              <div class="postText">
+                  <img id="image" src="../images/basicImage.png" alt="faruzanChibi">
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                <br>
+                <br>
+              </div> 
+              <span class="comment-counter" data-bs-toggle="modal" data-bs-target="#modalId">
+                <img src="../images/commentsIcon.png" alt="messageIcon" id="icons">  371
+              </span>
+              <span class="upvote-counter"><img src="../images/upvoteIcon.png" alt="upvoteIcon" id="icons"> 12.1k</span>
+              <span class="downvote-counter"><img src="../images/downvoteIcon.png" alt="downvoteIcon" id="icons"> 576</span>
+              <span class="share-counter"><img src="../images/shareIcon.png" alt="shareIcon" id="icons"> 576</span>
+              
+            </section>   
+          </section> 
+        </div>
+        <div id="sidebarInnoNet">
+          <div id="sidebar-one">
+            <section class="ideasShare">
+              <h4>Share your Ideas~</h4>
+              <a href="#" id="Ideas"><img src="../images/postLogo.png" alt="Post">Post</a>
+              <a href="#" id="Ideas"><img src="../images/imageLogo.png" alt="Post">Image</a>
+              <a href="#" id="Ideas"><img src="../images/videoLogo.png" alt="Post">Video</a>
+            </section>
+              <hr>
+            <section class="trendsBar">
+              <h4><img src="../images/stonksicon.png" alt="stonksicon" id="sidebarIcon">What's Trending</h4>
+              <hr>
+              <a href="#" id="Trending"><h5>Artifical Intelligence</h5>
+              <h6>12k Posts</h6></a>
+              <hr>
+              <a href="#" id="Trending"><h5>Moon Landing Technology</h5>
+              <h6>71k Posts</h6></a>
+              <hr>
+              <a href="#" id="Trending"><h5>Terraformation</h5>
+              <h6>1.5k Posts</h6></a>
+              <hr>
+              <a href="#" id="Trending"><h5>MIT</h5>
+              <h6>699 Posts</h6></a>
+              <hr>
+              <a href="#" id="Trending"><h5>4-D Printing</h5>
+              <h6>75k Posts</h6></a>
+              <hr>
+              <a href="#" id="Trending"><h5>MidJourney</h5>
+              <h6>16k Posts</h6></a>
+              <hr>
+
+            </section>       
+          </div>
+          <div id="sidebar-two">
+          <section class="followUsers">
+            <h2>Users to Follow</h2>
+            <hr>
+            <section id="usercardFollow">
+              <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                <a href="#"><img id="icons" src="../images/usericon1.png" alt="usertofollow"></a>
+                <h5 style="margin-left: 10px; margin-right: auto;">User Testing</h5>
+                <a href="#"><img id="iconsplus" src="../images/plus-circle.svg" alt="add icon" style="margin-left: auto;"></a>
+              </div>
+              <section>
+                <a href="#"><img src="../images/basicImage.png" alt="followimg" class="userFollowImg"></a>
+                <a href="#"><img src="../images/basicImage.png" alt="followimg" class="userFollowImg"></a>
+                <a href="#"><img src="../images/basicImage.png" alt="followimg" class="userFollowImg"></a>
+                <a href="#"><img src="../images/basicImage.png" alt="followimg" class="userFollowImg"></a>
+              </section>
+            </section>
+            <hr>
+            <section  id="usercardFollow">
+              <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                <a href="#"><img id="icons" src="../images/usericon1.png" alt="usertofollow"></a>
+                <h5 style="margin-left: 10px; margin-right: auto;">User Testing</h5>
+                <a href="#"><img id="iconsplus" src="../images/plus-circle.svg" alt="add icon" style="margin-left: auto;"></a>
+              </div>
+            <section>
+              <a href="#"><img src="../images/basicImage.png" alt="followimg" class="userFollowImg"></a>
+              <a href="#"><img src="../images/basicImage.png" alt="followimg" class="userFollowImg"></a>
+              <a href="#"><img src="../images/basicImage.png" alt="followimg" class="userFollowImg"></a>
+              <a href="#"><img src="../images/basicImage.png" alt="followimg" class="userFollowImg"></a>
+            </section>
+            </section>
+            <hr>
+            <section  id="usercardFollow">
+              <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                <a href="#"><img id="icons" src="../images/usericon1.png" alt="usertofollow"></a>
+                <h5 style="margin-left: 10px; margin-right: auto;">User Testing</h5>
+                <a href="#"><img id="iconsplus" src="../images/plus-circle.svg" alt="add icon" style="margin-left: auto;"></a>
+              </div>
+            
+            
+            <section>
+              <a href="#"><img src="../images/basicImage.png" alt="followimg" class="userFollowImg"></a>
+              <a href="#"><img src="../images/basicImage.png" alt="followimg" class="userFollowImg"></a>
+              <a href="#"><img src="../images/basicImage.png" alt="followimg" class="userFollowImg"></a>
+              <a href="#"><img src="../images/basicImage.png" alt="followimg" class="userFollowImg"></a>
+            </section>
+            </section>
+            <hr>
+            <section id="usercardFollow">
+              <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                <a href="#"><img id="icons" src="../images/usericon1.png" alt="usertofollow"></a>
+                <h5 style="margin-left: 10px; margin-right: auto;">User Testing</h5>
+                <a href="#"><img id="iconsplus" src="../images/plus-circle.svg" alt="add icon" style="margin-left: auto;"></a>
+              </div>  
+            <section>
+              <a href="#"><img src="../images/basicImage.png" alt="followimg" class="userFollowImg"></a>
+              <a href="#"><img src="../images/basicImage.png" alt="followimg" class="userFollowImg"></a>
+              <a href="#"><img src="../images/basicImage.png" alt="followimg" class="userFollowImg"></a>
+              <a href="#"><img src="../images/basicImage.png" alt="followimg" class="userFollowImg"></a>
+            </section>
+            </section>
+            <hr>
+          </section>
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </main>
+
+
+<!-- Regular Modal -->
+<div class="modal fade" id="regularModal" tabindex="-1" role="dialog" aria-labelledby="regularModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-m">
+      <div class="modal-content">
+
+          <!-- Modal Header -->
+          <!-- Post user will appear here -->
+          <div class="modal-header custom-modal-header">
+              <a href="#"><img id="modal-profilePicture" src="../images/kavehPNG.png" alt="kavehChibi"></img><h5 id="userModalpfp">User</h5></a>
+
+              <button type="button" class="btn-close btn-close-white btn-light m-0 p-3 rounded" data-bs-dismiss="modal"></button>
+
+          </div>
+          <!-- Modal Body -->
+          
+          <div class="modal-body container-xl m-0">
+              <div class="modal-postText">
+                                 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              
+            </div>
+              <div class="modal-postFeed">
+                <hr>
+              <section id="filters">                    
+                <span class="comment-counter"><a href="#"><img src="../images/commentsIcon.png" alt="commensIcon" id="modal-iconsFeed"></a></span>
+                <span class="upvote-counter"><a href="#"><img src="../images/upvoteIcon.png" alt="upvoteIcon" id="modal-iconsFeed"></a></span>
+                <span class="downvote-counter"><a href="#"><img src="../images/downvoteIcon.png" alt="downvoteIcon" id="modal-iconsFeed"></a></span>
+                <span class="share-counter"><a href="#"><img src="../images/shareIcon.png" alt="shareIcon" id="modal-iconsFeed"></a></span>
+                <hr>
+              </section>
+              <section id="commentUser">
+                <textarea name="comments" id="commentBlock" placeholder="Login to Comment..." disabled></textarea>
+              </section>
+              </section>
+              <section id="commentsFeed">
+                <img id="modal-profilePicture"src="../images/faruzanPNG.png" alt="faruzanChibi">Madam Faruzan</img>
+                <div class="postText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+                  ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  <hr>
+                  <span class="upvote-counter"><a href="#"><img src="../images/upvoteIcon.png" alt="upvoteIcon" id="modal-iconsFeed"></a></span>
+                  <span class="downvote-counter"><a href="#"><img src="../images/downvoteIcon.png" alt="downvoteIcon" id="modal-iconsFeed"></a></span>
+              </section>
+              <hr>
+              <section id="commentsFeed">
+                <img id="modal-profilePicture"src="../images/faruzanPNG.png" alt="faruzanChibi">Madam Faruzan</img>
+                <div class="postText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+                  ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  <hr>
+                  <span class="upvote-counter"><a href="#"><img src="../images/upvoteIcon.png" alt="upvoteIcon" id="modal-iconsFeed"></a></span>
+                  <span class="downvote-counter"><a href="#"><img src="../images/downvoteIcon.png" alt="downvoteIcon" id="modal-iconsFeed"></a></span>
+              </section>
+              <hr>
+              <section id="commentsFeed">
+                <img id="modal-profilePicture"src="../images/faruzanPNG.png" alt="faruzanChibi">Madam Faruzan</img>
+                <div class="postText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+                  ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  <hr>
+                  <span class="upvote-counter"><a href="#"><img src="../images/upvoteIcon.png" alt="upvoteIcon" id="modal-iconsFeed"></a></span>
+                  <span class="downvote-counter"><a href="#"><img src="../images/downvoteIcon.png" alt="downvoteIcon" id="modal-iconsFeed"></a></span>
+              </section>
+              </div>
+            </div>
+          <!-- Modal Footer -->
+          <div class="modal-footer">
+              
+          </div>
+
+      </div>
+  </div>
+</div>
+<!-- Image Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+
+          <!-- Modal Header -->
+          <!-- Post user will appear here -->
+          <div class="modal-header custom-modal-header">
+              <a href="#"><img id="modal-profilePicture" src="../images/kavehPNG.png" alt="kavehChibi"></img><h5 id="userModalpfp">User</h5></a>
+
+              <button type="button" class="btn-close btn-close-white btn-light m-0 p-3 rounded" data-bs-dismiss="modal"></button>
+
+          </div>
+          <!-- Modal Body -->
+          <div class="imgmodal-body container-xl m-0">
+              <div class="imgmodal-postText">
+                  <img id="image" src="../images/basicImage.png" alt="faruzanChibi">
+                <br>
+                <br>
+                <div>                    
+                  <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+                  ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. -->
+                </div>
+              </div>
+                <br>
+              <div class="imgmodal-postFeed">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+
+                <hr>
+              <section id="filters">                    
+                <span class="comment-counter"><a href="#"><img src="../images/commentsIcon.png" alt="commensIcon" id="modal-iconsFeed"></a></span>
+                <span class="upvote-counter"><a href="#"><img src="../images/upvoteIcon.png" alt="upvoteIcon" id="modal-iconsFeed"></a></span>
+                <span class="downvote-counter"><a href="#"><img src="../images/downvoteIcon.png" alt="downvoteIcon" id="modal-iconsFeed"></a></span>
+                <span class="share-counter"><a href="#"><img src="../images/shareIcon.png" alt="shareIcon" id="modal-iconsFeed"></a></span>
+                <hr>
+              </section>
+              <section id="commentUser">
+                <textarea name="comments" id="commentBlock" placeholder="Login to Comment..." disabled></textarea>
+              </section>
+              <section id="commentsFeed">
+                <img id="modal-profilePicture"src="../images/faruzanPNG.png" alt="faruzanChibi">Madam Faruzan</img>
+                <div class="postText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+                  ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  <hr>
+                  <span class="upvote-counter"><a href="#"><img src="../images/upvoteIcon.png" alt="upvoteIcon" id="modal-iconsFeed"></a></span>
+                  <span class="downvote-counter"><a href="#"><img src="../images/downvoteIcon.png" alt="downvoteIcon" id="modal-iconsFeed"></a></span>
+              </section>
+              <hr>
+              <section id="commentsFeed">
+                <img id="modal-profilePicture"src="../images/faruzanPNG.png" alt="faruzanChibi">Madam Faruzan</img>
+                <div class="postText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+                  ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  <hr>
+                  <span class="upvote-counter"><a href="#"><img src="../images/upvoteIcon.png" alt="upvoteIcon" id="modal-iconsFeed"></a></span>
+                  <span class="downvote-counter"><a href="#"><img src="../images/downvoteIcon.png" alt="downvoteIcon" id="modal-iconsFeed"></a></span>
+              </section>
+              <hr>
+              <section id="commentsFeed">
+                <img id="modal-profilePicture"src="../images/faruzanPNG.png" alt="faruzanChibi">Madam Faruzan</img>
+                <div class="postText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+                  ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  <hr>
+                  <span class="upvote-counter"><a href="#"><img src="../images/upvoteIcon.png" alt="upvoteIcon" id="modal-iconsFeed"></a></span>
+                  <span class="downvote-counter"><a href="#"><img src="../images/downvoteIcon.png" alt="downvoteIcon" id="modal-iconsFeed"></a></span>
+              </section>
+              </div>
+            </div>
+          <!-- Modal Footer -->
+          <div class="modal-footer">
+              
+          </div>
+
+      </div>
+  </div>
+</div>
+<!-- Video Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+
+          <!-- Modal Header -->
+          <!-- Post user will appear here -->
+          <div class="modal-header custom-modal-header">
+              <a href="#"><img id="modal-profilePicture" src="../images/kavehPNG.png" alt="kavehChibi"></img><h5 id="userModalpfp">User</h5></a>
+
+              <button type="button" class="btn-close btn-close-white btn-light m-0 p-3 rounded" data-bs-dismiss="modal"></button>
+
+          </div>
+          <!-- Modal Body -->
+          <div class="modal-body container-xl m-0">
+              <div class="modal-postText">
+                  <img id="image" src="../images/basicImage.png" alt="faruzanChibi">
+                <br>
+                <br>
+                <div>                    
+                  <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+                  ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. -->
+                </div>
+              </div>
+                <br>
+              <div class="modal-postFeed">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+
+                <hr>
+              <section id="filters">                    
+                <span class="comment-counter"><a href="#"><img src="../images/commentsIcon.png" alt="commensIcon" id="modal-iconsFeed"></a></span>
+                <span class="upvote-counter"><a href="#"><img src="../images/upvoteIcon.png" alt="upvoteIcon" id="modal-iconsFeed"></a></span>
+                <span class="downvote-counter"><a href="#"><img src="../images/downvoteIcon.png" alt="downvoteIcon" id="modal-iconsFeed"></a></span>
+                <span class="share-counter"><a href="#"><img src="../images/shareIcon.png" alt="shareIcon" id="modal-iconsFeed"></a></span>
+                <hr>
+              </section>
+              <section id="commentUser">
+                <textarea name="comments" id="commentBlock" placeholder="Login to Comment..." disabled></textarea>
+              </section>
+              <section id="commentsFeed">
+                <img id="modal-profilePicture"src="../images/faruzanPNG.png" alt="faruzanChibi">Madam Faruzan</img>
+                <div class="postText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+                  ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  <hr>
+                  <span class="upvote-counter"><a href="#"><img src="../images/upvoteIcon.png" alt="upvoteIcon" id="modal-iconsFeed"></a></span>
+                  <span class="downvote-counter"><a href="#"><img src="../images/downvoteIcon.png" alt="downvoteIcon" id="modal-iconsFeed"></a></span>
+              </section>
+              <hr>
+              <section id="commentsFeed">
+                <img id="modal-profilePicture"src="../images/faruzanPNG.png" alt="faruzanChibi">Madam Faruzan</img>
+                <div class="postText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+                  ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  <hr>
+                  <span class="upvote-counter"><a href="#"><img src="../images/upvoteIcon.png" alt="upvoteIcon" id="modal-iconsFeed"></a></span>
+                  <span class="downvote-counter"><a href="#"><img src="../images/downvoteIcon.png" alt="downvoteIcon" id="modal-iconsFeed"></a></span>
+              </section>
+              <hr>
+              <section id="commentsFeed">
+                <img id="modal-profilePicture"src="../images/faruzanPNG.png" alt="faruzanChibi">Madam Faruzan</img>
+                <div class="postText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+                  ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  <hr>
+                  <span class="upvote-counter"><a href="#"><img src="../images/upvoteIcon.png" alt="upvoteIcon" id="modal-iconsFeed"></a></span>
+                  <span class="downvote-counter"><a href="#"><img src="../images/downvoteIcon.png" alt="downvoteIcon" id="modal-iconsFeed"></a></span>
+              </section>
+              </div>
+            </div>
+          <!-- Modal Footer -->
+          <div class="modal-footer">
+              
+          </div>
+
+      </div>
+  </div>
+</div>
+
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+  integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+</script>
+
+<!-- <script src="globaljss.js" defer>
+</script> -->
+<script>
+  const regModal = new bootstrap.Modal(document.getElementById('regularModal'))
+  const imgModal = new bootstrap.Modal(document.getElementById('imageModal'))
+  const vidModal = new bootstrap.Modal(document.getElementById('videoModal'))
+
+</script>
 </body>
+
 </html>
