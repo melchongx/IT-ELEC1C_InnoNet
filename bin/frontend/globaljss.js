@@ -1,3 +1,6 @@
+//Unused JS
+
+
 document.addEventListener('DOMContentLoaded', function () {
   // Fetch post content
     var xhttp = new XMLHttpRequest();

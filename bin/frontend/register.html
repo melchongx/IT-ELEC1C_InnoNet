@@ -4,25 +4,91 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>InnoNet</title>
-  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <title>Register</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="global.css">
+  <link rel="icon" type="image/x-icon" href="../logos/Logo 1.png">
 </head>
 
 <body>
+  <header>
+    <img id="logoIcon" src="../logos/Logo 1.png" alt="Logo InnoNet">
+    <img id="logoIcon" src="../logos/InnoNet.png" alt="InnoNet">
+    <nav id="leftbar">
+      <ul>
+        <li data-toggle="tooltip" data-placement="bottom" title="Home"><a href="homepage.html">Home</a></li>
+        <li data-toggle="tooltip" data-placement="bottom" title="About"><a href="about.html">About Us</a></li>
+        <li data-toggle="tooltip" data-placement="bottom" title="Clubs">
+        <div class="dropdown">
+            <a class="dropdown-toggle" href="clubs.html"role="button" data-bs-toggle="dropdown">Clubs</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">A.I</a></li>
+            <li><a class="dropdown-item" href="#">Data Analysis</a></li>
+            <li><a class="dropdown-item" href="#">Game Development</a></li>
+            <li><a class="dropdown-item" href="#">Newfound Tech</a></li>
+            <li><a class="dropdown-item" href="#">Cybersecurity </a></li>
+          </ul>
+        </div>
+        </li>
+
+      </ul>
+    </nav>
+    <div id="searchBar"class="btn-group dropstart">
+      <ul>
+      <li><input type="text" id="searchQRY" placeholder="Search your club.."></li>
+      </ul>
+    </div>
+    <nav id="rightbar">
+      <ul>
+        
+        <li data-toggle="tooltip" data-placement="bottom" title="Settings">
+          <div class="dropdown">
+            <button type="button" class="btn position-relative dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <img id="pfpIcon" src="../images/settingsicon.png" alt="settingsicon"></button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Filler</a></li>
+            <li><a class="dropdown-item" href="#">Filler</a></li>
+            <li><a class="dropdown-item" href="#">Filler</a></li>
+            <li><a class="dropdown-item" href="#">Filler</a></li>
+            <li><a class="dropdown-item" href="#">Filler</a></li>
+          </ul>
+        </div>
+        </li>
+        <li data-toggle="tooltip" data-placement="bottom" title="Notifications"><a href="#">
+          <button type="button" class="btn position-relative"><img id="pfpIcon" src="../images/notifbell.png" alt="notifbell">
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+6 
+            <span class="visually-hidden">unread messages</span></span>
+          </button></a>
+          
+        </li>
+        <li data-toggle="tooltip" data-placement="bottom" title="Login">
+          <div class="dropdown">
+            <button type="button" class="btn position-relative" data-bs-toggle="dropdown" aria-expanded="false">
+              <img id="pfpIcon" src="../images/usericon1.png" alt="usericon1"></button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="profile.html" disabled>Profile</a></li>
+            <li><a class="dropdown-item" href="login.html">Login</a></li>
+          </ul>
+        </div>
+          
+        </li>
+      </ul>
+    </nav>
+  </header>
+
     <div
     class="nav-bar d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5">
   </div>
+
   <section class="vh-100">
     <div class="container-fluid h-custom">
-      <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="mt-5 row d-flex justify-content-center align-items-center h-100">
         <div class="col-md-9 col-lg-6 col-xl-5">
           <img src="../img/inno-logo.png" class="img-fluid mb-5" alt="Sample image">
         </div>
-        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-          <form class="logins mt-5 mb-5">
+        <div class="loginContainer col-lg-6 col-xl-4">
+          <form class="logins m-0">
 
       <h1 class="mb-5 text-center">Register</h1>
 
@@ -87,12 +153,15 @@
             <div class="text-center text-lg-start mt-1 pt-2">
                 <button type="button" class="btn btn-primary btn-lg"
                     style="padding-left: 2.5rem; padding-right: 2.5rem;">Register</button>
-                <p class="small fw-bold mt-2 pt-1 mb-0">Already have an account? <a href="#!"
+                <p class="small fw-bold mt-2 pt-1 mb-0">Already have an account? <a href="login.html"
                     class="link-danger">Login</a></p>
             </div>
 
-    </form>
-  </div>
+        </form>
+      </div>
+      </div>
+    </div>
+  </section>
  
 </body>
 

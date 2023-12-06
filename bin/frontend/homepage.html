@@ -3,7 +3,7 @@
 
 <head>
 
-  <title>Homepage</title>
+  <title>Home</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,6 +15,7 @@
 
   </head>
   <link href="global.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="../logos/Logo 1.png">
   <script src="globaljss.js"></script>
 
 </head>
@@ -22,42 +23,70 @@
                 background-position: center;'>        
   <div class="content-container">
               
-        <header>
-            <img id="logoIcon" src="../logos/Logo 1.png" alt="Logo InnoNet">
-            <img id="logoIcon" src="../logos/InnoNet.png" alt="InnoNet">
-            <nav id="leftbar">
-              <ul>
-                <li data-toggle="tooltip" data-placement="bottom" title="Home"><a href="homepage.html">Home</a></li>
-                <li data-toggle="tooltip" data-placement="bottom" title="Clubs"><a href="clubs.html">Clubs</a></li>
-                <li data-toggle="tooltip" data-placement="bottom" title="About"><a href="about.html">About Us</a></li>
+    <header>
+      <img id="logoIcon" src="../logos/Logo 1.png" alt="Logo InnoNet">
+      <img id="logoIcon" src="../logos/InnoNet.png" alt="InnoNet">
+      <nav id="leftbar">
+        <ul>
+          <li data-toggle="tooltip" data-placement="bottom" title="Home"><a href="homepage.html">Home</a></li>
+          <li data-toggle="tooltip" data-placement="bottom" title="About"><a href="about.html">About Us</a></li>
+          <li data-toggle="tooltip" data-placement="bottom" title="Clubs">
+          <div class="dropdown">
+              <a class="dropdown-toggle" href="clubs.html"role="button" data-bs-toggle="dropdown">Clubs</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">A.I</a></li>
+              <li><a class="dropdown-item" href="#">Data Analysis</a></li>
+              <li><a class="dropdown-item" href="#">Game Development</a></li>
+              <li><a class="dropdown-item" href="#">Newfound Tech</a></li>
+              <li><a class="dropdown-item" href="#">Cybersecurity </a></li>
+            </ul>
+          </div>
+          </li>
 
-              </ul>
-            </nav>
-            <div id="searchBar"class="btn-group dropstart">
-              <ul>
-              <li><input type="text" id="searchQRY" placeholder="Search your club.."></li>
-              </ul>
-            </div>
-            <nav id="rightbar">
-              <ul>
-                <li data-toggle="tooltip" data-placement="bottom" title="Settings">
-                  <a href="#">
-                    <button type="button" class="btn position-relative"><img id="pfpIcon" src="../images/settingsicon.png" alt="settingsicon">
-                    </button></a>
-                </li>
-                <li data-toggle="tooltip" data-placement="bottom" title="Notifications"><a href="#">
-                  <button type="button" class="btn position-relative"><img id="pfpIcon" src="../images/notifbell.png" alt="notifbell">
-                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+6 
-                    <span class="visually-hidden">unread messages</span></span>
-                  </button></a>
-                  
-                </li>
-                <li data-toggle="tooltip" data-placement="bottom" title="Login"><a href="login.html">
-                  <button type="button" class="btn position-relative"><img id="pfpIcon" src="../images/usericon1.png" alt="usericon1"></button></a>
-                </li>
-              </ul>
-            </nav>
-          </header>
+        </ul>
+      </nav>
+      <div id="searchBar"class="btn-group dropstart">
+        <ul>
+        <li><input type="text" id="searchQRY" placeholder="Search your club.."></li>
+        </ul>
+      </div>
+      <nav id="rightbar">
+        <ul>
+          
+          <li data-toggle="tooltip" data-placement="bottom" title="Settings">
+            <div class="dropdown">
+              <button type="button" class="btn position-relative dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <img id="pfpIcon" src="../images/settingsicon.png" alt="settingsicon"></button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Filler</a></li>
+              <li><a class="dropdown-item" href="#">Filler</a></li>
+              <li><a class="dropdown-item" href="#">Filler</a></li>
+              <li><a class="dropdown-item" href="#">Filler</a></li>
+              <li><a class="dropdown-item" href="#">Filler</a></li>
+            </ul>
+          </div>
+          </li>
+          <li data-toggle="tooltip" data-placement="bottom" title="Notifications"><a href="#">
+            <button type="button" class="btn position-relative"><img id="pfpIcon" src="../images/notifbell.png" alt="notifbell">
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+6 
+              <span class="visually-hidden">unread messages</span></span>
+            </button></a>
+            
+          </li>
+          <li data-toggle="tooltip" data-placement="bottom" title="Login">
+            <div class="dropdown">
+              <button type="button" class="btn position-relative" data-bs-toggle="dropdown" aria-expanded="false">
+                <img id="pfpIcon" src="../images/usericon1.png" alt="usericon1"></button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="profile.html" disabled>Profile</a></li>
+              <li><a class="dropdown-item" href="login.html">Login</a></li>
+            </ul>
+          </div>
+            
+          </li>
+        </ul>
+      </nav>
+    </header>
 
 
   <main>
